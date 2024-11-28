@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Letters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Verification Screen -->
+        <div id="verificationScreen" class="screen active">
+            <h2>Verify Your Identity</h2>
+            <div class="name-input-container">
+                <input type="text" id="nameInput" placeholder="Enter Full Name">
+                <button id="submitNameBtn" class="submit-btn">Enter</button>
+            </div>
+            <div id="errorMessage" class="error-message"></div>
+            <div id="questionContainer"></div>
+        </div>
+
+        <!-- Letters Screen -->
+        <div id="lettersScreen" class="screen">
+            <h2>Your Envelopes</h2>
+            <div id="envelopesContainer"></div>
+        </div>
+
+        <!-- Letter Detail Screen -->
+        <div id="letterScreen" class="screen">
+            <div class="envelope-animation-container">
+                <div class="envelope-wrapper">
+                    <div class="envelope-body">
+                        <div class="envelope-flap"></div>
+                        <div class="envelope-back"></div>
+                        <div class="letter-paper">
+                            <div id="letterContent"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="lettersData.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
