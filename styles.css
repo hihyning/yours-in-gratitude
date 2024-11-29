@@ -1,39 +1,169 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
+}
+#toggle-container {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:fit-content;
 }
 
-body {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+.emoji {
+    font-size: 1em;
+    color: #b00808;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+#toggle-close {
+    display: none;
+}
+
+#slide-text {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8em;
+    margin-bottom: 2%;
+    width: fit-content;
+    white-space: nowrap;
+    color: #b00808;
+    text-align: left;
+    color: #b00808;
+    padding: 3%;
+    margin-top: 3%;
+    margin-left: 2%;
+    position: relative;
+    display: none;
+    animation: slideIn 0.5s ease-out forwards ;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%)!important;
+    }
+    100% {
+        transform: translateX(0)!important;
+    }
+}
+
+#slide-text a{
+    color: red;
+}
+
+#slide-text a:hover{
+    color: red;
+    font-style: italic;
+}
+
+
+h2 {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 2%;
+    color: #b00808;
+    text-align: center;
+}
+  
+  .instrument-serif-regular-italic {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .eb-garamond-font {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  :root {
+    --gradient-primary: #fff3c7;
+    --gradient-secondary: #d4ab6d;
+    --gradient-accent: #d5925b;
+    --gradient-dark: #c3684b;
+}
+
+  body {
+    background: radial-gradient(
+        circle at 50% 50%,
+        var(--gradient-primary) 0%,
+        var(--gradient-secondary) 45%,
+        var(--gradient-accent) 75%,
+        var(--gradient-dark) 100%
+    );
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    transition: background 0.3s ease;
+    overflow: hidden
 }
 
-.container {
-    background: rgba(255, 255, 255, 0.85);
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
-    padding: 40px;
-    width: 100%;
-    max-width: 500px;
+.card {
+    background-color:#fdf4c4;
+    border: 1px solid #b00808;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 
+        0 15px 35px rgba(139, 119, 102, 0.1),
+        0 3px 10px rgba(0, 0, 0, 0.1);
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    width: 30vw;
+    height: 30%;
+    position: relative;
+    opacity: 0; /* Make it invisible initially */
+    transition: opacity 2s ease-out, transform 2s ease-out;
 }
 
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    background: transparent;
+    border: 2px dotted #b00808;  /* Dotted border */
+    pointer-events: none; /* Ensures it doesn't interfere with clicks */
+    margin: 1.5%;
+}
+
+/* When the 'active' class is added, fade in and move up */
+.card.active {
+    opacity: 1;
+    transform: translateY(0); /* Move it to its final position */
+}
+
+/* Screen Transitions */
 .screen {
     display: none;
+    opacity: 0;
+    transition: opacity 0.8s ease;
 }
 
-.active {
+.screen.active {
     display: block;
-    animation: fadeIn 0.5s ease;
+    opacity: 1;
 }
 
+/* Verification Screen */
 .name-input-container {
     display: flex;
     gap: 10px;
@@ -41,232 +171,358 @@ body {
 
 input {
     flex: 1;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 8px;
-    border: 1px solid #e0e0e0;
+    padding: 2%;
+    padding-left: 5%;
+    border-radius: 10px;
+    border: 1px solid #b00808;
+    background-color: #fffbde;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+input:active {
+    border: 1px solid #b00808;
+}
+
+input:focus {
+    border: 2px solid #b00808;  /* You can also add a focus effect, like changing the border color */
+    transition: 0.1s ease;
+    outline: none;  /* Remove the outline for a cleaner look */
 }
 
 .submit-btn {
-    padding: 12px 24px;
-    margin: 10px 0;
-    background-color: #6a74c9;
-    color: white;
-    border: none;
-    border-radius: 8px;
+    padding: 2% 6%;
+    background-color:#fffbde;
+    border: 1px solid #b00808;
+    color: #b00808;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
 }
 
 .submit-btn:hover {
-    background-color: #5a64b9;
+    background-color: #b00808;
+    color: #fdf4c4;
+    transform: translateY(-2px);
+}
+
+h1 {
+    color: #b00808;
+    font-size: 0.8em;
+    text-align: center;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 10%;
 }
 
 .error-message {
-    color: #ff6b6b;
+    color: #b00808;
+    font-size: 0.8em;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 10px 0;
+    min-height: 20px;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
+#questionContainer {
+    color: #b00808;
+    font-size: 1em;
+    text-align: left;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    margin: 5%;
+}
+
+/* Multiple Choice Questions */
 .multiple-choice {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-top: 15px;
+    gap: 10% 3%;
+    margin-top: 3%;
+    margin-bottom: 5%;
 }
 
 .choice-btn {
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 8px;
+    padding: 2% 6%;
+    background-color:#fffbde;
+    border: 1px solid #b00808;
+    color: #b00808;
+    border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8em;
+    margin-bottom: 2%;
 }
 
 .choice-btn:hover {
-    background-color: #e0e0e0;
-}
+    background-color: #b00808;
+    color: #fdf4c4;
+    transform: translateY(-2px);}
 
 .choice-btn.selected {
-    background-color: #6a74c9;
-    color: white;
+    background-color: #b00808;
+    color: #fdf4c4;
+    transform: translateY(-2px);
+}
+#loadingScreen {
+    transition: opacity 0.5s ease;
 }
 
-/* Envelope Display Styles */
-#envelopesContainer {
+.screen {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
+    opacity: 0;
 }
 
-.envelope {
-    width: 200px;
-    height: 120px;
-    background-color: #f0f0f0;
+#loadingScreen.screen.active {
+    display: flex;
+    opacity: 1;
+}
+
+.loading-message {
+    text-align: center;
+}
+
+.loading-message h2 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.screen {
+    display: none;
+}
+#lettersScreen .card {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    padding: 0 !important;
+}
+
+#lettersScreen .card::before {
+    display: none !important;
+}
+.envelope-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: slideIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(100vh); /* Start from below the viewport */
+    }
+    100% {
+        transform: translateY(0); /* End at natural position */
+    }
+}
+
+/* Add sliding animation for container */
+.envelope-container.shift-down {
+    animation: 1s ease; /* Remove the initial animation */
+    transform: translateY(50vh); /* Use !important to override the initial animation */
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);}
+
+.initial-envelope {
+    width: 300px;
+    height: 200px;
+    background: #fff6ea;
     position: relative;
     cursor: pointer;
     transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.envelope-text {
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-.envelope::before,
-.envelope::after {
-    content: '';
-    position: absolute;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-}
-
-.envelope::before {
-    top: 0;
-    border-top: 60px solid #e0e0e0;
-}
-
-.envelope::after {
-    bottom: 0;
-    border-bottom: 60px solid #f0f0f0;
-}
-
-.envelope.glowing {
-    box-shadow: 0 0 20px rgba(106, 116, 201, 0.7);
-    animation: pulse 1.5s infinite;
-}
-
-/* Updated Envelope Animation Styles */
-.envelope-animation-container {
-    width: 100%;
-    height: 100vh;
-    perspective: 1000px;
-    position: relative;
-    overflow: hidden;
-}
-
-.envelope-wrapper {
-    width: 300px;
-    height: 200px;
+    align-items: center;
     position: absolute;
     left: 50%;
-    bottom: -50px;
-    transform: translate(-50%, 0);
-}
-
-.envelope-body {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 1.5s ease;
+    top: 0%;
+    transform: translate(-50%, -60%);
+    color: #b00808;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1em;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    text-transform: lowercase;
+    z-index: 10;
+    width: 100%;  /* This ensures the text has the full width of the envelope */
+    height: 100%; /* This ensures the text has the full height of the envelope */
 }
 
 .envelope-flap {
     position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
-    background: #e0e0e0;
-    transform-origin: top;
-    transition: transform 1s ease;
-    z-index: 3;
+    background: #e0d3c1;
     clip-path: polygon(0 0, 50% 50%, 100% 0);
+    z-index: 3;
+    transition: transform 0.8s ease;
+    transform-origin: top;
 }
 
-.envelope-back {
+#letterScreen {
+    width: 200%;
+    height: 100%;
+}
+
+/* Letter Animation Styles */
+.letter-content {
     position: absolute;
     width: 100%;
-    height: 100%;
-    background: #f0f0f0;
-    transform-origin: center;
-    z-index: 1;
-}
-
-.letter-paper {
-    position: absolute;
-    width: 90%;
+    border: 1px solid #b00808;
     height: auto;
-    min-height: 300px;
-    background: white;
-    left: 5%;
-    bottom: 100%;
-    transform: translateY(90%);
-    transition: transform 1.2s ease;
-    z-index: 2;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-}
-
-#letterContent {
+    background: #fff3c7;
+    bottom: 30%;
+    padding: 10%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(-50%);
     opacity: 0;
-    transition: opacity 0.8s ease;
-    padding: 20px;
-    text-align: left;
+    z-index: 5;
+    border-radius: 10px;
+    font-family: "Instrument Serif", serif;  /* Optional: set font */
 }
 
-/* Animation Classes */
-.envelope-open .envelope-flap {
+.letter-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    background: transparent;
+    border: 2px dotted #b00808;  /* Dotted border */
+    pointer-events: none; /* Ensures it doesn't interfere with clicks */
+    margin: 1.5%;
+}
+
+/* Opening Animation States */
+.envelope.opening .envelope-flap {
     transform: rotateX(180deg);
 }
 
-.envelope-open .letter-paper {
-    transform: translateY(-80%);
-}
-
-.envelope-open #letterContent {
+.envelope.opening .letter-content {
+    transform: translateY(-50%);
     opacity: 1;
 }
 
-#letterScreen.active {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+pre {
+    font-family: "Instrument Serif", serif;  /* Optional: set font */
+    white-space: pre-line;  /* Preserve line breaks and allow wrapping */
 }
 
-.letter-text {
-    line-height: 1.6;
-    font-size: 1.1em;
-    margin-top: 20px;
+/* Mobile Queries for screens up to 767px */
+@media (max-width: 767px){
+    body{
+        width: 100vw;
+        height: 100vh;
+        padding: none;
+    }
+    .card {
+        width: 90vw; /* Adjust width to fit mobile screens */
+        height: auto;
+        padding: 5% 10%; /* Reduce padding for better fit */
+        transform: scale(0.95); /* Apply scaling if needed */
+    }
+
+    .container {
+        width: 100%;
+        padding: 0; /* Remove unnecessary padding for container */
+    }
+
+    .name-input-container {
+        flex-direction: column;
+        gap: 15px; /* Reduced gap between input and button */
+    }
+
+    input {
+        width: 100%;
+        padding: 4%;
+        font-size: 1.2em; /* Slightly increase font size for better readability */
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 4% 8%;
+        font-size: 1.1em;
+    }
+
+    .multiple-choice {
+        grid-template-columns: 1fr;
+        gap: 12px; /* Adjust gap to allow more space for buttons */
+    }
+
+    .choice-btn {
+        width: 100%;
+        padding: 4% 8%;
+        font-size: 1em;
+    }
+
+    .envelope-container {
+        height: 80vh; /* Adjust height for better mobile fit */
+    }
+
+    .initial-envelope {
+        width: 250px;
+        height: 180px;
+    }
+
+    .envelope-text {
+        font-size: 1em;
+    }
+
+    .letter-content {
+        padding: 15%;
+        font-size: 3em;
+    }
 }
 
-.letter-paper::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.9));
-    pointer-events: none;
-}
+/* Mobile Queries for very small screens (up to 480px) */
+@media (max-width: 480px) {
+    .card {
+        width: 95vw; /* Adjust width further for very small screens */
+        padding: 10% 5%; /* Adjust padding further */
+        transform: scale(1); /* Avoid further scaling at very small sizes */
+    }
 
-.envelope-text {
-    color: #6a74c9;
-    font-weight: 500;
-    position: relative;
-    z-index: 2;
-}
+    h1 {
+        font-size: 1em;
+    }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
+    .error-message,
+    #questionContainer,
+    .choice-btn {
+        font-size: 1em; /* Ensure fonts are readable */
+    }
 
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
+    .envelope-text {
+        font-size: 1em;
+    }
 
-#lettersScreen {
-    text-align: center;
-}
-
-#lettersScreen h2 {
-    margin-bottom: 20px;
-    color: #333;
+    .letter-text {
+        font-size: 3em;
+    }
 }

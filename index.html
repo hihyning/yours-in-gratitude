@@ -2,30 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Personal Letters</title>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Yours in Gratitude</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="./YIG Favicon.png">
 </head>
 <body>
+    <div id="toggle-container">
+        <span id="toggle-emoji" class="emoji">⭐ info</span>
+        <span id="toggle-close" class="emoji">ⓧ close</span>
+        <div id="slide-text"><strong>yours in gratitude x:</strong><br>for when emails & texts just don't feel special enough.<br>hand<strike>written</strike> coded by hyning on thanksgiving 2024<br><br>find me on:<br><a href="https://www.hyninggan.com/">www.hyninggan.com</a><br><a href="https://www.instagram.com/hihyning/">@hihyning</a>
+        </r></div>
+    </div>
     <div class="container">
         <!-- Verification Screen -->
+        <div class="card">
         <div id="verificationScreen" class="screen active">
-            <h2>Verify Your Identity</h2>
+            <h2>there's a note with your name on it...</h2>
             <div class="name-input-container">
-                <input type="text" id="nameInput" placeholder="Enter Full Name">
-                <button id="submitNameBtn" class="submit-btn">Enter</button>
+                <input type="text" id="nameInput" placeholder="please enter your FIRST & LAST name...">
+                <button id="submitNameBtn" class="submit-btn">proceed</button>
             </div>
             <div id="errorMessage" class="error-message"></div>
             <div id="questionContainer"></div>
+            <h1>yours in gratitude xx</h1>
         </div>
-
-        <!-- Letters Screen -->
+    </div>
+    
+        <!-- Letters Screen with New Envelope Structure -->
         <div id="lettersScreen" class="screen">
-            <h2>Your Envelopes</h2>
-            <div id="envelopesContainer"></div>
+            <div class="card letters-card"></div>
+                <div class="envelope-container">
+                <div class="envelope">
+                    <div class="envelope-text"><h2>click to open</h2></div>
+                </div>
+            </div>
         </div>
-
-        <!-- Letter Detail Screen -->
+    
+        <!-- Letter Detail Screen with Animation Structure -->
         <div id="letterScreen" class="screen">
             <div class="envelope-animation-container">
                 <div class="envelope-wrapper">
@@ -33,13 +49,23 @@
                         <div class="envelope-flap"></div>
                         <div class="envelope-back"></div>
                         <div class="letter-paper">
-                            <div id="letterContent"></div>
+                            <div id="letterContent">
+                                <pre id="letter-content"></pre>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    <!-- Loading Screen (outside container) -->
+    <div id="loadingScreen" class="screen">
+        <div class="loading-message">
+            <h2></h2>
+        </div>
+    </div>
+
     <script src="lettersData.js"></script>
     <script src="script.js"></script>
 </body>
