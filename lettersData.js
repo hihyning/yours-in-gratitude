@@ -324,6 +324,31 @@ const lettersData = {
             }
         ]
     },
+    "Eunice Lai": {
+        "name": "Eunice Lai",
+        "verificationQuestions": [
+            {
+                "question": "what iconic song did we dance to in hz?",
+                "options": ["all star", "old town road", "harlem shake", "gangnam style"],
+                "correctAnswer": "old town road"
+            },
+            {
+                "question": "what is my panda bestie called?",
+                "options": ["cutey", "squishy", "fluffy", "puffy"],
+                "correctAnswer": "puffy"
+            },
+            {
+                "question": "where do I live in KL?",
+                "options": ["mount kiara", "ampang", "damansara heights", "sri damansara"],
+                "correctAnswer": "sri damansara"
+            }
+        ],
+        "letters": [
+            {
+                "content": "eunice,<br><br>wanted to just send this to you to let you know how grateful I am for you! obviously a lot has happened over this year, but something I am always so sincerly thankful for is our enduring friendship. you are one of my oldest and closest friends and I never hope that changes, I hope you feel the same. know that I will always have your back no matter what <3 also yes I did code this in a delirious haze at 3am... call me a CMU student w the amount of times VSCode is being opened lmaooo. excited for you to come to nyc, love you tons!<br><br>yours in gratitude,<br>hyning xx"
+            }
+        ]
+    },
 };
 // Fetch the content from JSON (for this example, we directly use the object)
 const letterContent = letterData.letters[0].content;
