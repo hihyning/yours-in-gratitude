@@ -1,4 +1,29 @@
 const lettersData = {
+    "Hyning Gan": {
+        "name": "Hyning Gan",
+        "verificationQuestions": [
+            {
+                "question": "what is the purpose of this website?",
+                "options": ["to flex my coding skills", "to spread gratitude", "to be cheesy", "to make something cool"],
+                "correctAnswer": "to spread grstitude"
+            },
+            {
+                "question": "how long did it take me to make this?",
+                "options": ["24 hours", "1 hour", "way too long", "half a day"],
+                "correctAnswer": "half a day"
+            },
+            {
+                "question": "will I make this public?",
+                "options": ["will try my best lol...", "unfortunately I'm technically challenged", "no this is mine", "yes duhhh"],
+                "correctAnswer": "will try my best lol..."
+            }
+        ],
+        "letters": [
+            {
+                "content": "hello,<br><br>this site is just a little something I made this thanksgiving season to make it a little more special to give thanks~ I love sending snail mail but it takes too long (I'm impatient), and emails or texts don't feel special enough. I also procrsastinated doing my actual design work by making this site lol. hope everyone had a lovely thanksgiving season!<br><br>yours in gratitude,<br>hyning xx"
+            }
+        ]
+    },
     "Moe Ebii": {
         "name": "Moe Ebii",
         "verificationQuestions": [
@@ -203,7 +228,7 @@ const lettersData = {
         "name": "Emma Wong",
         "verificationQuestions": [
             {
-                "question": "what would I most likely order at brunch??",
+                "question": "what would I most likely order at brunch?",
                 "options": ["lemonade", "espresso martini", "sparkling water", "coffee"],
                 "correctAnswer": "lemonade"
             },
