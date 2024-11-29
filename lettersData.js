@@ -199,6 +199,31 @@ const lettersData = {
             }
         ]
     },
+    "Emma Wong": {
+        "name": "Emma Wong",
+        "verificationQuestions": [
+            {
+                "question": "what would I most likely order at brunch??",
+                "options": ["lemonade", "espresso martini", "sparkling water", "coffee"],
+                "correctAnswer": "lemonade"
+            },
+            {
+                "question": "not one of them is ___ than all my friends?",
+                "options": ["smarter", "cooler", "tougher", "all of the above"],
+                "correctAnswer": "all of the above"
+            },
+            {
+                "question": "which outfit combo are you most likely to wear?",
+                "options": ["black tank + mini skirt", "black top + dark jeans", "blue tee + black jeans", "black tank + white pants"],
+                "correctAnswer": "black top + dark jeans"
+            }
+        ],
+        "letters": [
+            {
+                "content": "emma,<br><br>just wanted to take this moment to say how thankful I am for you! hope you're having a wonderful american thanksgiving rn (hopefully the white ppl food aint that bad lmao)~ I'm so happy we got to get so much closer since you came to nyc. our coffee chats, grind seshes and tea spilling sincerly is always a highlight of my week and it means so much to me to have someone so close to home here. I hope that you've also been enjoying nyc w me too! idk what I'm gonna do when you're gone next sem...waiting on when you come back ofc <3 love you so much!<br><br>yours in gratitude,<br>hyning xx"
+            }
+        ]
+    },
 };
 // Fetch the content from JSON (for this example, we directly use the object)
 const letterContent = letterData.letters[0].content;
