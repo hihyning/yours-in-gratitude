@@ -145,7 +145,7 @@ const lettersData = {
         ],
         "letters": [
             {
-                "content": "jen,<br><br>just wanted to take this time to let you know how thankful I am for you- thank you for hosting friendsgiving a yours this year too! it's beemn so lovely getting to know you better this year and I'm so happy we got to actually be friends. I always crack up upon hearing your stories and unhinged intrusive thoughts lmaooo. hope we get to properly yap sometime in a non working environment (smh to the others im looking at them)...love ya :)<br><br>yours in gratitude,<br>hyning xx"
+                "content": "jen,<br><br>just wanted to take this time to let you know how thankful I am for you- thank you for hosting friendsgiving at yours this year too! it's been so lovely getting to know you better this year and I'm so happy we got to actually be friends. I always crack up upon hearing your stories and unhinged intrusive thoughts lmaooo. hope we get to properly yap sometime in a non working environment (smh to the others im looking at them)...love ya :)<br><br>yours in gratitude,<br>hyning xx"
             }
         ]
     },
