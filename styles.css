@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@media (min-width: 1000px) {
 #toggle-container {
     font-family: "Instrument Serif", serif;
     font-weight: 400;
@@ -434,101 +436,445 @@ pre {
     font-family: "Instrument Serif", serif;  /* Optional: set font */
     white-space: pre-line;  /* Preserve line breaks and allow wrapping */
 }
+}
 
-/* Mobile Queries for screens up to 767px */
-@media (max-width: 767px){
-    body{
-        width: 100vw;
-        height: 100vh;
-        padding: none;
-        overflow: hidden;
-        transform: scale(150%);
-    }
-
-    .emoji {
-        font-size: 10em;}
-
-    .card {
-        width: 90vw; /* Adjust width to fit mobile screens */
-        height: auto;
-        padding: 5% 10%; /* Reduce padding for better fit */
-        transform: scale(0.95); /* Apply scaling if needed */
-    }
-
-    .container {
-        width: 100%;
-        padding: 0; /* Remove unnecessary padding for container */
-        transform: scale(150%);
-    }
-
-    .name-input-container {
+@media (max-width: 999px){
+    #toggle-container {
+        font-family: "Instrument Serif", serif;
+        font-weight: 400;
+        font-style: italic;
+        position: fixed;
+        top: 2%;
+        left: 5%;
+        z-index: 1000;
+        display: flex;
         flex-direction: column;
-        gap: 15px; /* Reduced gap between input and button */
+        align-items: flex-start;
+        width:fit-content;
     }
-
+    
+    .emoji {
+        font-size: 3em;
+        color: #b00808;
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+    }
+    
+    #toggle-close {
+        display: none;
+    }
+    
+    #slide-text {
+        font-family: "Instrument Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2em;
+        margin-bottom: 2%;
+        width: fit-content;
+        white-space: nowrap;
+        color: #b00808;
+        text-align: left;
+        color: #b00808;
+        padding: 3%;
+        margin-top: 3%;
+        margin-left: 2%;
+        position: relative;
+        display: none;
+        animation: slideIn 0.5s ease-out forwards ;
+    }
+    
+    @keyframes slideIn {
+        0% {
+            transform: translateX(-100%)!important;
+        }
+        100% {
+            transform: translateX(0)!important;
+        }
+    }
+    
+    #slide-text a{
+        color: red;
+    }
+    
+    #slide-text a:hover{
+        color: red;
+        font-style: italic;
+    }
+    
+    
+    h2 {
+        font-family: "Instrument Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-bottom: 4%;
+        line-height: 100%;
+        color: #b00808;
+        text-align: center;
+        font-size: 3.5em;
+    }
+      
+      .instrument-serif-regular-italic {
+        font-family: "Instrument Serif", serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+      
+      .eb-garamond-font {
+        font-family: "EB Garamond", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+    
+      :root {
+        --gradient-primary: #fff3c7;
+        --gradient-secondary: #d4ab6d;
+        --gradient-accent: #d5925b;
+        --gradient-dark: #c3684b;
+    }
+    
+      body {
+        background: radial-gradient(
+            circle at 50% 50%,
+            var(--gradient-primary) 0%,
+            var(--gradient-secondary) 45%,
+            var(--gradient-accent) 75%,
+            var(--gradient-dark) 100%
+        );
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        transition: background 0.3s ease;
+        overflow: hidden;
+    }
+    
+    .card {
+        background-color:#fdf4c4;
+        border: 2.5px solid #b00808;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        box-shadow: 
+            0 15px 35px rgba(139, 119, 102, 0.1),
+            0 3px 10px rgba(0, 0, 0, 0.1);
+        padding-top: 10%;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 10%;
+        width: 60vw;
+        height: 30%;
+        position: relative;
+        opacity: 0; /* Make it invisible initially */
+        transition: opacity 2s ease-out, transform 2s ease-out;
+    }
+    
+    .card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 8px;
+        background: transparent;
+        border: 5px dotted #b00808;  /* Dotted border */
+        pointer-events: none; /* Ensures it doesn't interfere with clicks */
+        margin: 1.5%;
+    }
+    
+    /* When the 'active' class is added, fade in and move up */
+    .card.active {
+        opacity: 1;
+        transform: translateY(0); /* Move it to its final position */
+    }
+    
+    /* Screen Transitions */
+    .screen {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.8s ease;
+    }
+    
+    .screen.active {
+        display: block;
+        opacity: 1;
+    }
+    
+    /* Verification Screen */
+    .name-input-container {
+        display: flex;
+        gap: 10px;
+    }
+    
     input {
-        width: 100%;
-        padding: 4%;
-        font-size: 1.2em; /* Slightly increase font size for better readability */
+        flex: 1;
+        padding: 2%;
+        padding-left: 5%;
+        border-radius: 10px;
+        border: 2px solid #b00808;
+        background-color: #fffbde;
+        font-family: "Instrument Serif", serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 1.5em;
     }
-
+    
+    input:active {
+        border: 2px solid #b00808;
+    }
+    
+    input:focus {
+        border: 2.5px solid #b00808;  /* You can also add a focus effect, like changing the border color */
+        transition: 0.1s ease;
+        outline: none;  /* Remove the outline for a cleaner look */
+    }
+    
     .submit-btn {
-        width: 100%;
-        padding: 4% 8%;
-        font-size: 1.1em;
+        padding: 2% 6%;
+        background-color:#fffbde;
+        border: 2px solid #b00808;
+        color: #b00808;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: "Instrument Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5em;
     }
-
-    .multiple-choice {
-        grid-template-columns: 1fr;
-        gap: 12px; /* Adjust gap to allow more space for buttons */
+    
+    .submit-btn:hover {
+        background-color: #b00808;
+        color: #fdf4c4;
+        transform: translateY(-2px);
     }
-
-    .choice-btn {
-        width: 100%;
-        padding: 4% 8%;
+    
+    h1 {
+        color: #b00808;
         font-size: 1em;
+        text-align: center;
+        font-family: "Instrument Serif", serif;
+        font-weight: 400;
+        font-style: italic;
+        margin-top: 10%;
+    }
+    
+    .error-message {
+        color: #b00808;
+        font-size: 1.5em;
+        text-align: center;
+        margin: 10px 0;
+        min-height: 20px;
+        font-family: "Instrument Serif", serif;
+        font-weight: 400;
+        font-style: italic;
     }
 
+#question-text {
+    margin-top: 10%;
+}
+    
+    #questionContainer {
+        color: #b00808;
+        font-size: 1.5em;
+        text-align: left;
+        font-family: "Instrument Serif", serif;
+        font-weight: 400;
+        margin: 5%;
+    }
+    
+    /* Multiple Choice Questions */
+    .multiple-choice {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10% 3%;
+        margin-top: 3%;
+        margin-bottom: 10%;
+    }
+    
+    .choice-btn {
+        padding: 2% 6%;
+        background-color:#fffbde;
+        border: 1px solid #b00808;
+        color: #b00808;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: "Instrument Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1em;
+        margin-bottom: 2%;
+    }
+    
+    .choice-btn:hover {
+        background-color: #b00808;
+        color: #fdf4c4;
+        transform: translateY(-2px);}
+    
+    .choice-btn.selected {
+        background-color: #b00808;
+        color: #fdf4c4;
+        transform: translateY(-2px);
+    }
+    #loadingScreen {
+        transition: opacity 0.5s ease;
+    }
+    
+    .screen {
+        display: flex;
+        opacity: 0;
+    }
+    
+    #loadingScreen.screen.active {
+        display: flex;
+        opacity: 1;
+    }
+    
+    .loading-message {
+        text-align: center;
+    }
+    
+    .loading-message h2 {
+        font-size: 2.5em;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .screen {
+        display: none;
+    }
+    #lettersScreen .card {
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
+        padding: 0 !important;
+    }
+    
+    #lettersScreen .card::before {
+        display: none !important;
+    }
     .envelope-container {
-        height: 80vh; /* Adjust height for better mobile fit */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        animation: slideIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     }
-
+    
+    @keyframes slideIn {
+        0% {
+            transform: translateY(100vh); /* Start from below the viewport */
+        }
+        100% {
+            transform: translateY(0); /* End at natural position */
+        }
+    }
+    
+    /* Add sliding animation for container */
+    .envelope-container.shift-down {
+        animation: 1s ease; /* Remove the initial animation */
+        transform: translateY(30vh); /* Use !important to override the initial animation */
+        transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);}
+    
     .initial-envelope {
+        width: 500px;
+        height: 300px;
+        background: #fff6ea;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    .envelope-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        top: 0%;
+        transform: translate(-50%, -60%);
+        color: #b00808;
+        font-family: "Instrument Serif", serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 2em;
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+        text-transform: lowercase;
+        z-index: 3;
+        width: 100%;  /* This ensures the text has the full width of the envelope */
+        height: 100%; /* This ensures the text has the full height of the envelope */
+    }
+    
+    .envelope-flap {
+        position: absolute;
+        top: 0;
         width: 100%;
         height: 100%;
+        background: #e0d3c1;
+        clip-path: polygon(0 0, 50% 50%, 100% 0);
+        z-index: 3;
+        transition: transform 0.8s ease;
+        transform-origin: top;
     }
-
-    .envelope-text {
-        font-size: 1em;
+    
+    #letterScreen {
+        width: 200%;
+        height: 100%;
     }
-
+    
+    /* Letter Animation Styles */
     .letter-content {
-        padding: 15%;
-        font-size: 3em;
+        position: absolute;
+        width: 100%;
+        border: 1px solid #b00808;
+        height: auto;
+        background: #fff3c7;
+        bottom: 10%;
+        padding: 10%;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translateY(-100%);
+        opacity: 0;
+        z-index: 5;
+        border-radius: 10px;
+        font-size: 2em;
+        font-family: "Instrument Serif", serif;  /* Optional: set font */
     }
-}
-
-/* Mobile Queries for very small screens (up to 480px) */
-@media (max-width: 480px) {
-    .card {
-        width: 95vw; /* Adjust width further for very small screens */
-        padding: 10% 5%; /* Adjust padding further */
-        transform: scale(1); /* Avoid further scaling at very small sizes */
-        overflow: hidden
+    
+    .letter-content::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 8px;
+        background: transparent;
+        border: 2px dotted #b00808;  /* Dotted border */
+        pointer-events: none; /* Ensures it doesn't interfere with clicks */
+        margin: 1.5%;
     }
-
-
-    .error-message,
-    #questionContainer,
-    .choice-btn {
-        font-size: 1em; /* Ensure fonts are readable */
+    
+    /* Opening Animation States */
+    .envelope.opening .envelope-flap {
+        transform: rotateX(180deg);
     }
-
-    .envelope-text {
-        font-size: 1em;
+    
+    .envelope.opening .letter-content {
+        transform: translateY(-50%);
+        opacity: 1;
     }
-
-    .letter-text {
-        font-size: 3em;
+    
+    pre {
+        font-family: "Instrument Serif", serif;  /* Optional: set font */
+        white-space: pre-line;  /* Preserve line breaks and allow wrapping */
     }
-}
+    }
