@@ -255,7 +255,7 @@ h1 {
 }
 
 .choice-btn {
-    padding: 2% 6%;
+    padding: 4% 6%;
     background-color:#fffbde;
     border: 1px solid #b00808;
     color: #b00808;
@@ -267,6 +267,7 @@ h1 {
     font-style: normal;
     font-size: 0.8em;
     margin-bottom: 2%;
+    line-height:100%;
 }
 
 .choice-btn:hover {
