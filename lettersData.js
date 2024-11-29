@@ -299,6 +299,31 @@ const lettersData = {
             }
         ]
     },
+    "Andrew Jesson": {
+        "name": "Andrew Jesson",
+        "verificationQuestions": [
+            {
+                "question": "what is your three jewels order?",
+                "options": ["jasmine tea", "earl grey tea", "black coffee", "mystical mint tea"],
+                "correctAnswer": "earl grey tea"
+            },
+            {
+                "question": "what is my three jewels order?",
+                "options": ["whole milk cappucino", "oolong tea", "almond milk latte", "oat strawberry matcha"],
+                "correctAnswer": "oat strawberry matcha"
+            },
+            {
+                "question": "when did neanderthals go extinct?",
+                "options": ["~40,000 years ago", "~100,000 years ago", "they're still here", "we ate them"],
+                "correctAnswer": "we ate them"
+            }
+        ],
+        "letters": [
+            {
+                "content": "andrew,<br><br>yes, this was what I working on yesterday lol- felt nice to also have a coding screen open like you~ felt intellectual (not as much as a columbia researcher I'm afriad). hope you had a good friendsgiving and dance party after! grateful to have formally met you after being a regular for so long, it always makes my day when I walk into 3J and see you :)<br><br>yours in gratitude,<br>hyning xx"
+            }
+        ]
+    },
 };
 // Fetch the content from JSON (for this example, we directly use the object)
 const letterContent = letterData.letters[0].content;
