@@ -285,7 +285,7 @@ const lettersData = {
             {
                 "question": "what is your JOOY order?",
                 "options": ["strawberry slush", "brown sugar boba", "matcha boba", "thai milk tea"],
-                "correctAnswer": "strawberyy slush"
+                "correctAnswer": "strawberry slush"
             },
             {
                 "question": "are we getting our O1 visas?",
