@@ -145,7 +145,7 @@ const lettersData = {
         ],
         "letters": [
             {
-                "content": "hansi,<br><br>YES LMAO I did just stay up until 3am to code this website because I'm procrastinating on doing actual school work... sounds like someone I know too...anyways, just wanted to express my gratitude for you this thanksgiving. you aleady know but I'm so happy we got to be so close this past year, it has been truly one of my highlights. I always wonder how I got so lucky to have found a friend like you :) thank you for all the yaps, late night grinds and delirious decisions- love you<3<br><br>yours in gratitude,<br><br>hyning xx"
+                "content": "hansi,<br><br>YES LMAO I did just stay up until 3am to code this website because I'm procrastinating on doing actual school work... sounds like someone I know too...anyways, just wanted to express my gratitude for you this thanksgiving. you aleady know but I'm so happy we got to be so close this past year, it has been truly one of my highlights. I always wonder how I got so lucky to have found a friend like you :) thank you for all the yaps, late night grinds and delirious decisions- love you<3<br><br>yours in gratitude,<br>hyning xx"
             }
         ]
     },
@@ -246,6 +246,31 @@ const lettersData = {
         "letters": [
             {
                 "content": "emma,<br><br>just wanted to take this moment to say how thankful I am for you! hope you're having a wonderful american thanksgiving rn (hopefully the white ppl food aint that bad lmao)~ I'm so happy we got to get so much closer since you came to nyc. our coffee chats, grind seshes and tea spilling sincerly is always a highlight of my week and it means so much to me to have someone so close to home here. I hope that you've also been enjoying nyc w me too! idk what I'm gonna do when you're gone next sem...waiting on when you come back ofc <3 love you so much!<br><br>yours in gratitude,<br>hyning xx"
+            }
+        ]
+    },
+    "Cenìnye": {
+        "name": "Cenìnye",
+        "verificationQuestions": [
+            {
+                "question": "what's the first/last song on our playlists?",
+                "options": ["higher", "then you can tell me goodbye", "beige", "goodnight chicago"],
+                "correctAnswer": "goodnight chicago"
+            },
+            {
+                "question": "what is the name of our minecraft world?",
+                "options": ["the bean", "our crib", "CNY", "3642 S Damen Ave"],
+                "correctAnswer": "CNY"
+            },
+            {
+                "question": "I miss my summer fling...",
+                "options": ["she misses me too", "she don't care", "she knows", "do you?"],
+                "correctAnswer": "she misses me too"
+            }
+        ],
+        "letters": [
+            {
+                "content": "cenìnye,<br><br>happy thanksgiving, wanted to send this to you so you can personally witness my coding prowess...improved since summer for sure. of course also checking in and asking how you are, hope you're enjoying boston with the family. grateful for our time in chicago, you gotta return the favour by visiting me in nyc sometime. stay sane and sexy as always.<br><br>yours in gratitude,<br>hyning xx"
             }
         ]
     },
