@@ -274,6 +274,31 @@ const lettersData = {
             }
         ]
     },
+    "Amanda Zheng": {
+        "name": "Amanda Zheng",
+        "verificationQuestions": [
+            {
+                "question": "what is my joe and the juice order?",
+                "options": ["unicorn tears", "iron man", "beats and berries", "coffee"],
+                "correctAnswer": "beats and berries"
+            },
+            {
+                "question": "what is your JOOY order?",
+                "options": ["strawberry slush", "brown sugar boba", "matcha boba", "thai milk tea"],
+                "correctAnswer": "strawberyy slush"
+            },
+            {
+                "question": "are we getting our O1 visas?",
+                "options": ["obvioisly", "YES DUHHH", "its in the bag", "all the above"],
+                "correctAnswer": "all the above"
+            }
+        ],
+        "letters": [
+            {
+                "content": "amanda,<br><br>just wanted to take this time to say how thankful I am for you, I hope you're not killing yourself with work this weekend- tbf I need to as well lol. I'm so glad we got to know each other better this past year and I feel lucky to have a friend that keeps me as inspired as you. you don't give yourself enough credit, you're killing it- don't forget that. love ya muah <3<br><br>yours in gratitude,<br>hyning xx"
+            }
+        ]
+    },
 };
 // Fetch the content from JSON (for this example, we directly use the object)
 const letterContent = letterData.letters[0].content;
