@@ -5,7 +5,7 @@ const lettersData = {
             {
                 "question": "what is the purpose of this website?",
                 "options": ["to flex my coding skills", "to spread gratitude", "to be cheesy", "to make something cool"],
-                "correctAnswer": "to spread grstitude"
+                "correctAnswer": "to spread gratitude"
             },
             {
                 "question": "how long did it take me to make this?",
