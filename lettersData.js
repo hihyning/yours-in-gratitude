@@ -349,6 +349,31 @@ const lettersData = {
             }
         ]
     },
+    "Hyren Gan": {
+        "name": "Hyren Gan",
+        "verificationQuestions": [
+            {
+                "question": "who is an iconic duo?",
+                "options": ["puffy + pingpong", "maji stack", "memo + merl", "all of the above"],
+                "correctAnswer": "all of the above"
+            },
+            {
+                "question": "which of the following islands is located furthest south, near the antarctic circle? (yes, this is now a geo bee)",
+                "options": ["bouvet island", "south georgia island", "kerguelen islands", "tristan da cunha"],
+                "correctAnswer": "bouvet island"
+            },
+            {
+                "question": "in which city did we take our photobooth pictures?",
+                "options": ["andorra", "venice", "florence", "garmisch partenkirchen"],
+                "correctAnswer": "florence"
+            }
+        ],
+        "letters": [
+            {
+                "content": "hyren,<br><br>I wanted to send this to you for support! I know the firdt rejection isn't easy- especially oxford (like why are they makin you do all thst just to apply bruh). but seriously, it is completely their loss, now you can focus on coming to an uni closer to me hehehehe :) let me know when is the best time to call you as a college counsellor, I will also have a few days in person with you before the major deadlines. I wish I had better advice, but tbh college apps are the trenches and you just have to survive them. good luck, love you <3<br><br>yours in gratitude,<br>hyning xx"
+            }
+        ]
+    },
 };
 // Fetch the content from JSON (for this example, we directly use the object)
 const letterContent = letterData.letters[0].content;
