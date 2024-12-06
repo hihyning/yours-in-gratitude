@@ -430,13 +430,13 @@ const lettersData = {
         "verificationQuestions": [
             {
                 "question": "when designing for accessibility, what’s one thing we should always keep in mind?",
-                "options": ["allowing for multiple ways to interact with content", "adding only visual feedback with no alternative", "making all text super small for efficiency", "assuming all users interact with content the same way"],
-                "correctAnswer": "allowing for multiple ways to interact with content"
+                "options": ["multiple ways to interact with content", "adding only visual feedback with no alternative", "text super small for efficiency", "assuming all users interact with content the same way"],
+                "correctAnswer": "multiple ways to interact with content"
             },
             {
                 "question": "which UX research method focuses on identifying user pain points through 'follow me home' studies?",
                 "options": ["heuristic evaluation", "contextual inquiry", "A/B testing", "diary studies"],
-                "correctAnswer": "closure"
+                "correctAnswer": "contextual inquiry"
             },
             {
                 "question": "what’s the real reason UX designers create personas?",
