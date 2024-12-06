@@ -424,6 +424,32 @@ const lettersData = {
             }
         ]
     },
+
+    "Defne Kaynak": {
+        "name": "Defne Kaynak",
+        "verificationQuestions": [
+            {
+                "question": "when designing for accessibility, what’s one thing we should always keep in mind?",
+                "options": ["allowing for multiple ways to interact with content", "adding only visual feedback with no alternative", "making all text super small for efficiency", "assuming all users interact with content the same way"],
+                "correctAnswer": "allowing for multiple ways to interact with content"
+            },
+            {
+                "question": "which UX research method focuses on identifying user pain points through 'follow me home' studies?",
+                "options": ["heuristic evaluation", "contextual inquiry", "A/B testing", "diary studies"],
+                "correctAnswer": "closure"
+            },
+            {
+                "question": "what’s the real reason UX designers create personas?",
+                "options": ["to give our imaginary users a cooler life than we’ll ever have", "to impress clients with the depth of our research", "to avoid saying “all of the above, but mostly the first one"],
+                "correctAnswer": "all of the above, but mostly the first one"
+            }
+        ],
+        "letters": [
+            {
+                "content": "defne,<br><br>thank you for the lovely semester, mentorship and for showing us how to bring digital products to life. your ability to balance creative vision with practicality has been incredibly inspiring. this class helped me gain a better understanding of what kind of designer I want to be in the future- and I truly appreciate your thoughtful feedback and support. *also yes I also coded this site :)br><br>yours in gratitude,<br>hyning"
+            }
+        ]
+    },
 };
 // Fetch the content from JSON (for this example, we directly use the object)
 const letterContent = letterData.letters[0].content;
