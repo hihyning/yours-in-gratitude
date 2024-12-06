@@ -420,7 +420,7 @@ const lettersData = {
         ],
         "letters": [
             {
-                "content": "ben,<br><br>thank you for making the intersection of psychology and design so fascinating- I am so happy to have taken your class. Your insights into how people perceive and interact with the world have inspired me to see design through a more empathetic and informed lens. I'm grateful for the thought-provoking discussions and your guidance throughout the semester. Looking forward to continue working on my experiment and connecting with you! *also yes I also coded this site :)br><br>yours in gratitude,<br>hyning"
+                "content": "ben,<br><br>thank you for making the intersection of psychology and design so fascinating- I am so happy to have taken your class. your insights into how people perceive and interact with the world have inspired me to see design through a more empathetic and informed lens. I'm grateful for the thought-provoking discussions and your guidance throughout the semester. looking forward to continue working on my experiment and connecting with you!<br>*also yes I also coded this site :)<br><br>yours in gratitude,<br>hyning"
             }
         ]
     },
@@ -446,7 +446,7 @@ const lettersData = {
         ],
         "letters": [
             {
-                "content": "defne,<br><br>thank you for the lovely semester, mentorship and for showing us how to bring digital products to life. your ability to balance creative vision with practicality has been incredibly inspiring. this class helped me gain a better understanding of what kind of designer I want to be in the future- and I truly appreciate your thoughtful feedback and support. *also yes I also coded this site :)br><br>yours in gratitude,<br>hyning"
+                "content": "defne,<br><br>thank you for the lovely semester, mentorship and for showing us how to bring digital products to life. your ability to balance creative vision with practicality has been incredibly inspiring. this class helped me gain a better understanding of what kind of designer I want to be in the future- and I truly appreciate your thoughtful feedback and support.<br>*also yes I also coded this site :)<br><br>yours in gratitude,<br>hyning"
             }
         ]
     },
