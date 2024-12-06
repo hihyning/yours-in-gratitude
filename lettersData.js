@@ -440,7 +440,7 @@ const lettersData = {
             },
             {
                 "question": "what’s the real reason UX designers create personas?",
-                "options": ["to give our imaginary users a cooler life than we’ll ever have", "to impress clients with the depth of our research", "to avoid saying “all of the above, but mostly the first one"],
+                "options": ["to give our imaginary users a cooler life than we’ll ever have", "to impress clients with the depth of our research", "to avoid saying 'the user' all the time","all of the above, but mostly the first one"],
                 "correctAnswer": "all of the above, but mostly the first one"
             }
         ],
