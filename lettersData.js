@@ -399,6 +399,31 @@ const lettersData = {
             }
         ]
     },
+    "Ben van Buren": {
+        "name": "Ben van Buren",
+        "verificationQuestions": [
+            {
+                "question": "which psychological concept explains why we tend to prefer objects that are easy to process visually?",
+                "options": ["processing fluency", "cognitive dissonance", "pavlovian conditioning", "operant conditioning"],
+                "correctAnswer": "processing fluency"
+            },
+            {
+                "question": "when we talked about the Gestalt principles, which one relates to perceiving a set of individual elements as a cohesive whole?",
+                "options": ["proximity", "continuity", "closure", "similarity"],
+                "correctAnswer": "closure"
+            },
+            {
+                "question": "the famous rubin vase illusion demonstrates which principle of perception, often used in interface design?",
+                "options": ["symmetry and balance", "figure-ground organisation", " visual hierarchy", "simplicity and minimalism"],
+                "correctAnswer": "figure-ground organisation"
+            }
+        ],
+        "letters": [
+            {
+                "content": "ben,<br><br>thank you for making the intersection of psychology and design so fascinating- I am so happy to have taken your class. Your insights into how people perceive and interact with the world have inspired me to see design through a more empathetic and informed lens. I'm grateful for the thought-provoking discussions and your guidance throughout the semester. Looking forward to continue working on my experiment and connecting with you! *also yes I also coded this site :)br><br>yours in gratitude,<br>hyning"
+            }
+        ]
+    },
 };
 // Fetch the content from JSON (for this example, we directly use the object)
 const letterContent = letterData.letters[0].content;
