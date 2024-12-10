@@ -463,7 +463,7 @@ const lettersData = {
                 "correctAnswer": "straddle forward roll"
             },
             {
-                "question": "how lucky are we? it's been a hell of a __",
+                "question": "how lucky are we? it's been a hell of a ___...",
                 "options": ["month", "week", "year","fortnight"],
                 "correctAnswer": "week"
             }
