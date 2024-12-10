@@ -424,7 +424,6 @@ const lettersData = {
             }
         ]
     },
-
     "Defne Kaynak": {
         "name": "Defne Kaynak",
         "verificationQuestions": [
@@ -447,6 +446,31 @@ const lettersData = {
         "letters": [
             {
                 "content": "defne,<br><br>thank you for the lovely semester, mentorship and for showing us how to bring digital products to life. your ability to balance creative vision with practicality has been incredibly inspiring. this class helped me gain a better understanding of what kind of designer I want to be in the future- and I truly appreciate your thoughtful feedback and support.<br>*also yes I also coded this site :)<br><br>yours in gratitude,<br>hyning"
+            }
+        ]
+    },
+     "Anes Dali": {
+        "name": "Anes Dali",
+        "verificationQuestions": [
+            {
+                "question": "which scent goes best with lavender?",
+                "options": ["bergamont", "thyme", "valerian", "apple"],
+                "correctAnswer": "bergamont"
+            },
+            {
+                "question": "which gymnastics move do you think I can do?",
+                "options": ["back handspring", "roundoff", "straddle forward roll", "front walkover"],
+                "correctAnswer": "straddle forward roll"
+            },
+            {
+                "question": "how lucky are we? it's been a hell of a __",
+                "options": ["month", "week", "year","fortnight"],
+                "correctAnswer": "week"
+            }
+        ],
+        "letters": [
+            {
+                "content": "anes,<br><br>happy happy birthday! I hope you had a good time today and have the best 20th year yet (shoutout the youngest one out there). thank you so much for being such a lovely friend this year too, I'm so glad we got to know each other better- and I hope that continues for years to come too! your prescence always balances out everyone else's insanity and for that I'm forever grateful. can't wait to make more memories together in the future <3<br><br>yours in gratitude,<br>hyning"
             }
         ]
     },
