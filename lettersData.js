@@ -474,6 +474,31 @@ const lettersData = {
             }
         ]
     },
+    "Marcos Chavez": {
+        "name": "Marcos Chavez",
+        "verificationQuestions": [
+            {
+                "question": "what is the greatest sin?",
+                "options": ["rivers in justified text", "hating chocolate", "forgetting a thank you page", "not coming to class"],
+                "correctAnswer": "forgetting a thank you page"
+            },
+            {
+                "question": "what class are we?",
+                "options": ["cool", "sillies", "scaries", "beauties"],
+                "correctAnswer": "beauties"
+            },
+            {
+                "question": "what was the name of my first project?",
+                "options": ["signs of heritage", "signs of chinatown", "chinese typefaces","characters of chinatown"],
+                "correctAnswer": "signs of heritage"
+            }
+        ],
+        "letters": [
+            {
+                "content": "marcos,<br><br>thank you for the lovely semester, mentorship and for sharing your passion for design with us. its so nice to look back on the first day of class when I (embarrassingly) added you on linkedin before meeting you to where we are as a class now. this class helped me gain a better understanding of what kind of designer I want to be in the future- and I truly appreciate your thoughtful feedback and support. will miss being in your class, keep in touch!<br>*also yes I also coded+designed this site :)<br><br>yours in gratitude,<br>hyning"
+            }
+        ]
+    },
 };
 // Fetch the content from JSON (for this example, we directly use the object)
 const letterContent = letterData.letters[0].content;
