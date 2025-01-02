@@ -499,6 +499,56 @@ const lettersData = {
             }
         ]
     },
+    "Lee Zhen Ying": {
+        "name": "Lee Zhen Ying",
+        "verificationQuestions": [
+            {
+                "question": "what is the name of the cat stuffed animal you gave me?",
+                "options": ["kucing gemuk", "小肥猫", "胖猫咪", "fatty catty"],
+                "correctAnswer": "小肥猫"
+            },
+            {
+                "question": "which zodiac animal do we not have within our cousins?",
+                "options": ["pig", "mouse", "chicken", "snake"],
+                "correctAnswer": "snake"
+            },
+            {
+                "question": "where are we sitting right now?",
+                "options": ["matcha cafe", "kopitiam", "at home","we are not sitting"],
+                "correctAnswer": "matcha cafe"
+            }
+        ],
+        "letters": [
+            {
+                "content": "hello zhen ying :)<br><br>this is a silly site I coded and just wanted to show you hehe. 加油做完你的final project！<br><br>yours in gratitude,<br>hyning"
+            }
+        ]
+    },
+    "Eagan Notokusumo": {
+        "name": "Eagan Notokusumo",
+        "verificationQuestions": [
+            {
+                "question": "how excited are you to come to nyc?",
+                "options": ["excited", "quite excited", "rather excited", "none of the above, my excitement can't be contained in mere words"],
+                "correctAnswer": "none of the above, my excitement can't be contained in mere words"
+            },
+            {
+                "question": "what are the names of the esteemed chicken siblings?",
+                "options": ["murph+memo", "merl+mary", "merl+memo", "momo+meep"],
+                "correctAnswer": "merl+memo"
+            },
+            {
+                "question": "what is my favourite flavour of ice cream?",
+                "options": ["vanilla (basic)", "cookies and cream", "mint choc chip","strawberry"],
+                "correctAnswer": "strawberry"
+            }
+        ],
+        "letters": [
+            {
+                "content": "eagan,<br><br>thanks for the lovely recent chats! totally unexpected and random but serendipitous in the best way. just wanted to show you this site I coded lol~enjoy :)<br><br>yours in gratitude,<br>hyning"
+            }
+        ]
+    },
 };
 // Fetch the content from JSON (for this example, we directly use the object)
 const letterContent = letterData.letters[0].content;
