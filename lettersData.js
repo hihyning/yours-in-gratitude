@@ -555,7 +555,7 @@ const lettersData = {
             {
                 "question": "this website is for...",
                 "options": ["sending notes + introducing myself!", "flexing my coding skills", "design challenge", "data nerds"],
-                "correctAnswer": "sending notes + introducing myself"
+                "correctAnswer": "sending notes + introducing myself!"
             },
             {
                 "question": "what class is this for?",
@@ -564,7 +564,7 @@ const lettersData = {
             },
             {
                 "question": "why did I take this class?",
-                "options": ["upskilling my web dev skills", "learning how to integrate data + design", "more excuses to cool websites","all of the above"],
+                "options": ["upskilling my web dev skills", "learning how to integrate data + design", "more excuses to make cool websites","all of the above"],
                 "correctAnswer": "all of the above"
             }
         ],
