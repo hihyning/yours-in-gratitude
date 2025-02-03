@@ -543,17 +543,12 @@ const lettersData = {
                 "correctAnswer": "strawberry"
             }
         ],
-        "letters": [
+                "letters": [
             {
                 "content": "eagan,<br><br>thanks for the lovely recent chats! totally unexpected and random but serendipitous in the best way. just wanted to show you this site I coded lol~enjoy :)<br><br>yours in gratitude,<br>hyning"
             }
         ]
     },
-    "letters": [
-        {
-            "content": "HELLO!,<br><br>If you’re seeing this, welcome to my next-level coding class S2025. This site is a personal project where I send gratitude notes to people in my life—but with a twist. Instead of a simple message, recipients must answer 3 'screening' questions to unlock their letter, turning the act of receiving a note into a small, meaningful challenge.<br>This project reflects my ethos as a designer: I enjoy build experiences that foster human connection through interaction. By layering intention into a digital space, I transform a simple exchange into something more thoughtful, playful, and personal.<br>Technically, this system is built using local JSON data to store a dynamic collection of names, questions, and letters. When a recipient inputs their name, the site cross-references the stored data, pulling their corresponding note and generating a set of screening questions. Only by selecting the correct answers—unique to their relationship with me—does the letter reveal itself. This approach combines structured data handling with an interactive logic layer, transforming a simple messaging system into a personalised, gamified experience.<br>Hope you enjoyed!<br><br>yours in gratitude,<br>hyning"
-        }
-    ]
 };
 // Fetch the content from JSON (for this example, we directly use the object)
 const letterContent = letterData.letters[0].content;
