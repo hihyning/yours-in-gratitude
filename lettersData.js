@@ -549,8 +549,27 @@ const lettersData = {
             }
         ]
     },
-    "letters": [
-        {
+ "HYNING": {
+        "name": "hyning",
+        "verificationQuestions": [
+            {
+                "question": "what class is this?",
+                "options": ["javascript jitters", "next-level coding", "web worries", "petrified prototyping"],
+                "correctAnswer": "next-level coding"
+            },
+            {
+                "question": "why did I make this website?",
+                "options": ["to introduce myself+send cute notes", "I was forced to do this", "Talia said I should", "why not?"],
+                "correctAnswer": "to introduce myself+send cute notes"
+            },
+            {
+                "question": "which js library am I the most afriad of?",
+                "options": ["vanilla", "three.js", "ar.js","p5.js"],
+                "correctAnswer": "p5.js"
+            }
+        ],
+     "letters": [
+            {
             "content": "HELLO!,<br><br>If you’re seeing this, welcome to my next-level coding class S2025. This site is a personal project where I send gratitude notes to people in my life—but with a twist. Instead of a simple message, recipients must answer 3 'screening' questions to unlock their letter, turning the act of receiving a note into a small, meaningful challenge.<br>This project reflects my ethos as a designer: I enjoy build experiences that foster human connection through interaction. By layering intention into a digital space, I transform a simple exchange into something more thoughtful, playful, and personal.<br>Technically, this system is built using local JSON data to store a dynamic collection of names, questions, and letters. When a recipient inputs their name, the site cross-references the stored data, pulling their corresponding note and generating a set of screening questions. Only by selecting the correct answers—unique to their relationship with me—does the letter reveal itself. This approach combines structured data handling with an interactive logic layer, transforming a simple messaging system into a personalised, gamified experience.<br>Hope you enjoyed!<br><br>yours in gratitude,<br>hyning"
         }
     ]
