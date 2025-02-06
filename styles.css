@@ -835,7 +835,7 @@ pre {
     /* Letter Animation Styles */
     .letter-content {
         position: absolute;
-        width: 100%;
+        width: 150%;
         border: 1px solid #b00808;
         height: auto;
         background: #fff3c7;
