@@ -393,20 +393,20 @@ h1 {
 
 /* Letter Animation Styles */
 .letter-content {
-    position: absolute;
-    width: 100%;
+      position: absolute;
+  bottom:0.5em;
+    width: 150%;
     border: 1px solid #b00808;
     height: auto;
     background: #fff3c7;
-    bottom: 30%;
     padding: 10%;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateY(-50%);
     opacity: 0;
     z-index: 5;
     border-radius: 10px;
-    font-family: "Instrument Serif", serif;  /* Optional: set font */
+    font-family: "Instrument Serif", serif; /* Optional: set font */
+  overflow-y: scroll;
 }
 
 .letter-content::before {
