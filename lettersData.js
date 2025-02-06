@@ -549,7 +549,7 @@ const lettersData = {
             }
         ]
     },
- "HYNING": {
+    "HYNING": {
         "name": "hyning",
         "verificationQuestions": [
             {
@@ -572,9 +572,9 @@ const lettersData = {
             {
             "content": "HELLO!,<br>If you’re seeing this, welcome to my next-level coding class S2025. This site is a personal project where I send gratitude notes to people in my life—but with a twist. Instead of a simple message, recipients must answer 3 'screening' questions to unlock their letter.<br>This project reflects my ethos as a designer: I enjoy build experiences that foster human connection through interaction. By layering intention into a digital space, I transform a simple exchange into something more thoughtful, playful, and personal.Technically, this system is built using local JSON data to store a dynamic collection of inputs. When a recipient inputs their name, the site cross-references the stored data, pulling their corresponding note and generating a set of screening questions. Only by selecting the correct answers—unique to their relationship with me—does the letter reveal itself. This approach combines structured data handling with an interactive logic layer, transforming a simple messaging system into a personalised, gamified experience.<br>Hope you enjoyed!<br><br>yours in gratitude,<br>hyning"
             }
-    ]
- };
-        "Robert Pegollo": {
+        ]
+     },
+    "Robert Pegollo": {
         "name": "Robert Pegollo",
         "verificationQuestions": [
             {
