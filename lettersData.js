@@ -598,10 +598,10 @@ const lettersData = {
                 "content": "rob,<br><br>I just wanted to take a moment to say a huge thank you for being such an amazing desk neighbor and friend during my time here. seriously, I feel so lucky that I ended up moving desks and got to sit next to you—it truly made all the difference. having another fellow gen z in this pod made everything so much more fun (and bearable, lol). I’m really going to miss our daily chats, random jokes, and just having you around to make the workday better. as an intern, it meant so much to have someone who made me feel so welcomed and included from the start. you really made this experience a special one, and I can’t even imagine coming into work without you there :( even though you’re moving to another department (ugh, betrayal!!), I know you’ll absolutely kill it over there. they’re lucky to have you. I fully expect post-move updates, snack deliveries, and an open free-food Slack updates at all times. wishing you all the best in this next chapter!<br><br>yours in gratitude,<br>hyning"
             }
         ]
-    },
+    }
 };
 // Fetch the content from JSON (for this example, we directly use the object)
-const letterContent = letterData.letters[0].content;
+const letterContent = lettersData.letters[0].content;
 
 // Inject the content into the <pre> tag, using innerHTML to preserve <br> tags
 document.getElementById('letter-content').innerHTML = letterContent;
