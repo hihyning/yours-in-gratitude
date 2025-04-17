@@ -620,10 +620,35 @@ const lettersData = {
         ],
                 "letters": [
             {
-                "content": "Sarah,<br><br>, What would this internship have been without you? You’ve been my (30) Rock, my sanity check and my recent partner in everything these past few months. From our coffee runs, to chilling at each other’s desks— working alongside you has been such an absolute delight :) you make everything so much more fun and bright. I admire your work ethic, energy and kindness and I’m so grateful we got to grow together. Keep killing it in design and life~ we have to keep in touch even after this too <3<br><br>yours in gratitude,<br>hyning"
+                "content": "Sarah,<br><br>What would this internship have been without you? You’ve been my (30) Rock, my sanity check and my recent partner in everything these past few months. From our coffee runs, to chilling at each other’s desks— working alongside you has been such an absolute delight :) you make everything so much more fun and bright. I admire your work ethic, energy and kindness and I’m so grateful we got to grow together. Keep killing it in design and life~ we have to keep in touch even after this too <3<br><br>yours in gratitude,<br>hyning"
             }
         ]
-    }
+    },
+    "Lauren Presley": {
+        "name": "Lauren Presley",
+        "verificationQuestions": [
+            {
+                "question": "what juice brand am I an ambassador for?",
+                "options": ["juice press", "joe and the juice", "juice generation", "juicy juice"],
+                "correctAnswer": "juice generation"
+            },
+            {
+                "question": "which genz slang would calvin be most likely to use?",
+                "options": ["you're a queen", "you ate!", "skibiddi rizz", "he doesn't know any genz slang"],
+                "correctAnswer": "you ate!"
+            },
+            {
+                "question": "how much will I miss you being my desk neighbour?",
+                "options": ["a lot", "A LOT", "words can't even describe it","all of these combined and more"],
+                "correctAnswer": "all of these combined and more"
+            }
+        ],
+                "letters": [
+            {
+                "content": "Lauren (or lorm),<br><br>Who knew that Rob’s departure would lead to such a wonderful friendship (don’t tell Rob lol hehe)? I’m so glad you ended up as desk neighbours, my internship would have not been the same without our bants, juice runs (#ambassador) and yaps. You’ve been such a grounding, funny, and joyful presence and I’m really going to miss seeing you! Thank you so much for being such a real one, please stay in touch (I still have $350 worth of juice dates in me) <3<br><br>yours in gratitude,<br>hyning"
+            }
+        ]
+    },
 };
 // Fetch the content from JSON (for this example, we directly use the object)
 const letterContent = lettersData.letters[0].content;
