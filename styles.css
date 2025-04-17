@@ -111,7 +111,7 @@ h2 {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    transition: background 0.3s ease;
+    transition: 0.3s ease;
     overflow: hidden
 }
 
@@ -326,6 +326,7 @@ h1 {
     min-height: 70vh;
     transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     animation: slideIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    position: relative;
 }
 
 @keyframes slideIn {
@@ -351,6 +352,7 @@ h1 {
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin: 0 auto;
 }
 
 .envelope-text {
@@ -359,8 +361,8 @@ h1 {
     align-items: center;
     position: absolute;
     left: 50%;
-    top: 0%;
-    transform: translate(-50%, -60%);
+    bottom: 4%;  /* Position from bottom of letter content */
+    transform: translateX(-50%);
     color: #b00808;
     font-family: "Instrument Serif", serif;
     font-weight: 400;
@@ -370,8 +372,8 @@ h1 {
     transition: opacity 0.3s ease;
     text-transform: lowercase;
     z-index: 10;
-    width: 100%;  /* This ensures the text has the full width of the envelope */
-    height: 100%; /* This ensures the text has the full height of the envelope */
+    width: 100%;
+    text-align: center;
 }
 
 .envelope-flap {
@@ -393,19 +395,23 @@ h1 {
 
 /* Letter Animation Styles */
 .letter-content {
-      position: absolute;
-  bottom:0.5em;
-    width: 150%;
+    position: absolute;
+    width: 170%;
+    max-width: 800px;
     border: 1px solid #b00808;
     height: auto;
     background: #fff3c7;
-    padding: 10%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10% 10% 10% 10%;  /* Increased bottom padding to make room for click text */
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
     z-index: 5;
     border-radius: 10px;
     font-family: "Instrument Serif", serif;
+    position: relative;  /* Added to establish positioning context for envelope-text */
 }
 
 .letter-content::before {
@@ -428,7 +434,7 @@ h1 {
 }
 
 .envelope.opening .letter-content {
-    transform: translate(-50%, -25%);  /* Maintain horizontal centering while moving up */
+    transform: translate(-50%, -50%) translateY(-20vh);
     opacity: 1;
 }
 
@@ -760,123 +766,34 @@ pre {
     }
     .envelope-container {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 70vh;
-        transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-        animation: slideIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        padding: 20px;
     }
-    
-    @keyframes slideIn {
-        0% {
-            transform: translateY(100vh); /* Start from below the viewport */
-        }
-        100% {
-            transform: translateY(0); /* End at natural position */
-        }
-    }
-    
-    /* Add sliding animation for container */
-    .envelope-container.shift-down {
-        animation: 1s ease; /* Remove the initial animation */
-        transform: translateY(30vh); /* Use !important to override the initial animation */
-        transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);}
     
     .initial-envelope {
-        width: 500px;
-        height: 300px;
-        background: #fff6ea;
-        position: relative;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        width: 90%;
+        max-width: 500px;
     }
     
-    .envelope-text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        left: 50%;
-        top: 0%;
-        transform: translate(-50%, -60%);
-        color: #b00808;
-        font-family: "Instrument Serif", serif;
-        font-weight: 400;
-        font-style: italic;
-        font-size: 2em;
-        opacity: 0.8;
-        transition: opacity 0.3s ease;
-        text-transform: lowercase;
-        z-index: 3;
-        width: 100%;  /* This ensures the text has the full width of the envelope */
-        height: 100%; /* This ensures the text has the full height of the envelope */
-    }
-    
-    .envelope-flap {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: #e0d3c1;
-        clip-path: polygon(0 0, 50% 50%, 100% 0);
-        z-index: 3;
-        transition: transform 0.8s ease;
-        transform-origin: top;
-    }
-    
-    #letterScreen {
-        width: 200%;
-        height: 100%;
-    }
-    
-    /* Letter Animation Styles */
     .letter-content {
-        position: absolute;
-        width: 80%;  /* Reduced from 100% to prevent stretching */
-        border: 1px solid #b00808;
-        height: auto;
-        background: #fff3c7;
-        left: 50%;  /* Added for horizontal centering */
-        transform: translate(-50%, 0);  /* Center horizontally */
-        padding: 10%;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-        opacity: 0;
-        z-index: 5;
-        border-radius: 10px;
+        width: 90%;
+        max-width: 500px;
         font-size: 2em;
-        font-family: "Instrument Serif", serif;
-    }
-    
-    .letter-content::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        border-radius: 8px;
-        background: transparent;
-        border: 2px dotted #b00808;  /* Dotted border */
-        pointer-events: none; /* Ensures it doesn't interfere with clicks */
-        margin: 1.5%;
-    }
-    
-    /* Opening Animation States */
-    .envelope.opening .envelope-flap {
-        transform: rotateX(180deg);
+        padding: 8% 8% 15% 8%;  /* Increased bottom padding for mobile */
     }
     
     .envelope.opening .letter-content {
-        transform: translate(-50%, -5%);  /* Maintain horizontal centering while moving up */
+        transform: translate(-50%, -50%) translateY(-15vh);
         opacity: 1;
     }
 
     [data-name="letters"].envelope.opening .letter-content {
-        transform: translate(-50%, -10%);  /* Maintain horizontal centering while moving up */
+        transform: translate(-50%, -50%) translateY(-15vh);
         opacity: 1;
+    }
+    
+    .envelope-text {
+        font-size: 2em;
+        bottom: 5%;
     }
     
     pre {
