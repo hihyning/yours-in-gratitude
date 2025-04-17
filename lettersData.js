@@ -598,6 +598,31 @@ const lettersData = {
                 "content": "rob,<br><br>I just wanted to take a moment to say a huge thank you for being such an amazing desk neighbor and friend during my time here. seriously, I feel so lucky that I ended up moving desks and got to sit next to you—it truly made all the difference. having another fellow gen z in this pod made everything so much more fun (and bearable, lol). I'm really going to miss our daily chats, random jokes, and just having you around to make the workday better. as an intern, it meant so much to have someone who made me feel so welcomed and included from the start. you really made this experience a special one, and I can't even imagine coming into work without you there :( even though you're moving to another department (ugh, betrayal!!), I know you'll absolutely kill it over there. they're lucky to have you. I fully expect post-move updates, snack deliveries, and an open free-food Slack updates at all times. wishing you all the best in this next chapter!<br><br>yours in gratitude,<br>hyning"
             }
         ]
+    },
+    "Sarah Muller": {
+        "name": "Sarah Muller",
+        "verificationQuestions": [
+            {
+                "question": "what is the best salad of all time?",
+                "options": ["chicken milanese w lettuce", "chicken milanese w rocket", "turkey w mixed greens", "sweetgreen..."],
+                "correctAnswer": "chicken milanese w rocket"
+            },
+            {
+                "question": "what would calvin point out about our designs...",
+                "options": ["leading too tight", "font too big", "blacks aren't black enough", "literally all our design decisions"],
+                "correctAnswer": "literally all our design decisions"
+            },
+            {
+                "question": "how much will I miss you being my coworker?",
+                "options": ["a lot", "A LOT", "words can't even describe it","all of these combined and more"],
+                "correctAnswer": "all of these combined and more"
+            }
+        ],
+                "letters": [
+            {
+                "content": "Sarah,<br><br>, What would this internship have been without you? You’ve been my (30) Rock, my sanity check and my recent partner in everything these past few months. From our coffee runs, to chilling at each other’s desks— working alongside you has been such an absolute delight :) you make everything so much more fun and bright. I admire your work ethic, energy and kindness and I’m so grateful we got to grow together. Keep killing it in design and life~ we have to keep in touch even after this too <3<br><br>yours in gratitude,<br>hyning"
+            }
+        ]
     }
 };
 // Fetch the content from JSON (for this example, we directly use the object)
