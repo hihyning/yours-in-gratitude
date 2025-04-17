@@ -549,26 +549,22 @@ const lettersData = {
             }
         ]
     },
-<<<<<<< HEAD
     "hyning": {
         "name": "hyning",
-        "verificationQuestions": [
+        "verificationQuestions": 
             {
                 "question": "what class is this for?",
                 "options": ["javascript jitters", "next-level coding", "worried web design", "petrified prototyping"],
-=======
     "HYNING": {
         "name": "hyning",
         "verificationQuestions": [
             {
                 "question": "what class is this?",
                 "options": ["javascript jitters", "next-level coding", "web worries", "petrified prototyping"],
->>>>>>> b957b24d7f76626efd2e27142df03ee799a3a1f1
                 "correctAnswer": "next-level coding"
             },
             {
                 "question": "why did I make this website?",
-<<<<<<< HEAD
                 "options": ["to send cute notes+introduce myself", "for fun", "to practice my web dev skills", "to show off"],
                 "correctAnswer": "to send cute notes+introduce myself"
             },
@@ -584,7 +580,6 @@ const lettersData = {
         }
     ]
 }};
-=======
                 "options": ["to introduce myself+send cute notes", "I was forced to do this", "Talia said I should", "why not?"],
                 "correctAnswer": "to introduce myself+send cute notes"
             },
@@ -597,9 +592,9 @@ const lettersData = {
      "letters": [
             {
             "content": "HELLO!,<br>If you’re seeing this, welcome to my next-level coding class S2025. This site is a personal project where I send gratitude notes to people in my life—but with a twist. Instead of a simple message, recipients must answer 3 'screening' questions to unlock their letter.<br>This project reflects my ethos as a designer: I enjoy build experiences that foster human connection through interaction. By layering intention into a digital space, I transform a simple exchange into something more thoughtful, playful, and personal.Technically, this system is built using local JSON data to store a dynamic collection of inputs. When a recipient inputs their name, the site cross-references the stored data, pulling their corresponding note and generating a set of screening questions. Only by selecting the correct answers—unique to their relationship with me—does the letter reveal itself. This approach combines structured data handling with an interactive logic layer, transforming a simple messaging system into a personalised, gamified experience.<br>Hope you enjoyed!<br><br>yours in gratitude,<br>hyning"
-            }
+ }
         ]
-     },
+    },
     "Robert Pegollo": {
         "name": "Robert Pegollo",
         "verificationQuestions": [
@@ -626,7 +621,6 @@ const lettersData = {
         ]
     }
 };
->>>>>>> b957b24d7f76626efd2e27142df03ee799a3a1f1
 // Fetch the content from JSON (for this example, we directly use the object)
 const letterContent = lettersData.letters[0].content;
 
