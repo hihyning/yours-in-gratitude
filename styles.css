@@ -340,7 +340,7 @@ h1 {
 /* Add sliding animation for container */
 .envelope-container.shift-down {
     animation: 1s ease; /* Remove the initial animation */
-    transform: translateY(50vh); /* Use !important to override the initial animation */
+    transform: translateY(30vh); /* Use !important to override the initial animation */
     transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);}
 
 .initial-envelope {
@@ -394,19 +394,19 @@ h1 {
 /* Letter Animation Styles */
 .letter-content {
     position: absolute;
-    width: 100%;
+    width: 80%;  /* Reduced from 100% to prevent stretching */
     border: 1px solid #b00808;
     height: auto;
     background: #fff3c7;
-    bottom: 30%;
+    left: 50%;  /* Added for horizontal centering */
+    transform: translate(-50%, -20%);  /* Center horizontally and maintain vertical position */
     padding: 10%;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateY(-50%);
     opacity: 0;
     z-index: 5;
     border-radius: 10px;
-    font-family: "Instrument Serif", serif;  /* Optional: set font */
+    font-family: "Instrument Serif", serif;
 }
 
 .letter-content::before {
@@ -429,7 +429,7 @@ h1 {
 }
 
 .envelope.opening .letter-content {
-    transform: translateY(-50%);
+    transform: translate(-50%, -25%);  /* Maintain horizontal centering while moving up */
     opacity: 1;
 }
 
@@ -835,20 +835,20 @@ pre {
     /* Letter Animation Styles */
     .letter-content {
         position: absolute;
-        width: 100%;
+        width: 80%;  /* Reduced from 100% to prevent stretching */
         border: 1px solid #b00808;
         height: auto;
         background: #fff3c7;
-        bottom: 10%;
+        left: 50%;  /* Added for horizontal centering */
+        transform: translate(-50%, 0);  /* Center horizontally */
         padding: 10%;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
         transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-        transform: translateY(-100%);
         opacity: 0;
         z-index: 5;
         border-radius: 10px;
         font-size: 2em;
-        font-family: "Instrument Serif", serif;  /* Optional: set font */
+        font-family: "Instrument Serif", serif;
     }
     
     .letter-content::before {
@@ -871,7 +871,12 @@ pre {
     }
     
     .envelope.opening .letter-content {
-        transform: translateY(-50%);
+        transform: translate(-50%, -5%);  /* Maintain horizontal centering while moving up */
+        opacity: 1;
+    }
+
+    [data-name="letters"].envelope.opening .letter-content {
+        transform: translate(-50%, -10%);  /* Maintain horizontal centering while moving up */
         opacity: 1;
     }
     

@@ -305,6 +305,9 @@ displayLetters(userData);
             container.classList.remove('shift-down');
             envelopeText.textContent = 'click to open';
         }
+        if (userData.name === "letters") {
+    envelope.setAttribute('data-name', 'letters');
+}
 
         // Toggle state
         isOpen = !isOpen;
