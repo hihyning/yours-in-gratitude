@@ -549,16 +549,26 @@ const lettersData = {
             }
         ]
     },
+<<<<<<< HEAD
     "hyning": {
         "name": "hyning",
         "verificationQuestions": [
             {
                 "question": "what class is this for?",
                 "options": ["javascript jitters", "next-level coding", "worried web design", "petrified prototyping"],
+=======
+    "HYNING": {
+        "name": "hyning",
+        "verificationQuestions": [
+            {
+                "question": "what class is this?",
+                "options": ["javascript jitters", "next-level coding", "web worries", "petrified prototyping"],
+>>>>>>> b957b24d7f76626efd2e27142df03ee799a3a1f1
                 "correctAnswer": "next-level coding"
             },
             {
                 "question": "why did I make this website?",
+<<<<<<< HEAD
                 "options": ["to send cute notes+introduce myself", "for fun", "to practice my web dev skills", "to show off"],
                 "correctAnswer": "to send cute notes+introduce myself"
             },
@@ -574,8 +584,51 @@ const lettersData = {
         }
     ]
 }};
+=======
+                "options": ["to introduce myself+send cute notes", "I was forced to do this", "Talia said I should", "why not?"],
+                "correctAnswer": "to introduce myself+send cute notes"
+            },
+            {
+                "question": "which js library am I the most afriad of?",
+                "options": ["vanilla", "three.js", "ar.js","p5.js"],
+                "correctAnswer": "p5.js"
+            }
+        ],
+     "letters": [
+            {
+            "content": "HELLO!,<br>If you’re seeing this, welcome to my next-level coding class S2025. This site is a personal project where I send gratitude notes to people in my life—but with a twist. Instead of a simple message, recipients must answer 3 'screening' questions to unlock their letter.<br>This project reflects my ethos as a designer: I enjoy build experiences that foster human connection through interaction. By layering intention into a digital space, I transform a simple exchange into something more thoughtful, playful, and personal.Technically, this system is built using local JSON data to store a dynamic collection of inputs. When a recipient inputs their name, the site cross-references the stored data, pulling their corresponding note and generating a set of screening questions. Only by selecting the correct answers—unique to their relationship with me—does the letter reveal itself. This approach combines structured data handling with an interactive logic layer, transforming a simple messaging system into a personalised, gamified experience.<br>Hope you enjoyed!<br><br>yours in gratitude,<br>hyning"
+            }
+        ]
+     },
+    "Robert Pegollo": {
+        "name": "Robert Pegollo",
+        "verificationQuestions": [
+            {
+                "question": "which cube crawl theme did not exist",
+                "options": ["scaERAs Tour", "Haunted House Wives", "Paris Olympics", "Below Deck: Dead Sea"],
+                "correctAnswer": "Below Deck: Dead Sea"
+            },
+            {
+                "question": "what game did we play w calvin at the arcade? ",
+                "options": ["street fighter", "just dance 2", "that weird japanese button smashing game", "tetris"],
+                "correctAnswer": "that weird japanese button smashing game"
+            },
+            {
+                "question": "how much will you miss our pod...",
+                "options": ["a lot", "A LOT", "words can't even describe it","all of these combined and more"],
+                "correctAnswer": "all of these combined and more"
+            }
+        ],
+                "letters": [
+            {
+                "content": "rob,<br><br>I just wanted to take a moment to say a huge thank you for being such an amazing desk neighbor and friend during my time here. seriously, I feel so lucky that I ended up moving desks and got to sit next to you—it truly made all the difference. having another fellow gen z in this pod made everything so much more fun (and bearable, lol). I’m really going to miss our daily chats, random jokes, and just having you around to make the workday better. as an intern, it meant so much to have someone who made me feel so welcomed and included from the start. you really made this experience a special one, and I can’t even imagine coming into work without you there :( even though you’re moving to another department (ugh, betrayal!!), I know you’ll absolutely kill it over there. they’re lucky to have you. I fully expect post-move updates, snack deliveries, and an open free-food Slack updates at all times. wishing you all the best in this next chapter!<br><br>yours in gratitude,<br>hyning"
+            }
+        ]
+    }
+};
+>>>>>>> b957b24d7f76626efd2e27142df03ee799a3a1f1
 // Fetch the content from JSON (for this example, we directly use the object)
-const letterContent = letterData.letters[0].content;
+const letterContent = lettersData.letters[0].content;
 
 // Inject the content into the <pre> tag, using innerHTML to preserve <br> tags
 document.getElementById('letter-content').innerHTML = letterContent;

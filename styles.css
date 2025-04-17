@@ -393,6 +393,7 @@ h1 {
 
 /* Letter Animation Styles */
 .letter-content {
+<<<<<<< HEAD
     position: absolute;
     width: 80%;  /* Reduced from 100% to prevent stretching */
     border: 1px solid #b00808;
@@ -400,13 +401,26 @@ h1 {
     background: #fff3c7;
     left: 50%;  /* Added for horizontal centering */
     transform: translate(-50%, -20%);  /* Center horizontally and maintain vertical position */
+=======
+      position: absolute;
+  bottom:0.5em;
+    width: 150%;
+    border: 1px solid #b00808;
+    height: auto;
+    background: #fff3c7;
+>>>>>>> b957b24d7f76626efd2e27142df03ee799a3a1f1
     padding: 10%;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
     z-index: 5;
     border-radius: 10px;
+<<<<<<< HEAD
     font-family: "Instrument Serif", serif;
+=======
+    font-family: "Instrument Serif", serif; /* Optional: set font */
+  overflow-y: scroll;
+>>>>>>> b957b24d7f76626efd2e27142df03ee799a3a1f1
 }
 
 .letter-content::before {
@@ -835,7 +849,11 @@ pre {
     /* Letter Animation Styles */
     .letter-content {
         position: absolute;
+<<<<<<< HEAD
         width: 80%;  /* Reduced from 100% to prevent stretching */
+=======
+        width: 150%;
+>>>>>>> b957b24d7f76626efd2e27142df03ee799a3a1f1
         border: 1px solid #b00808;
         height: auto;
         background: #fff3c7;
