@@ -649,6 +649,31 @@ const lettersData = {
             }
         ]
     },
+    "Calvin Chu": {
+        "name": "Calvin Chu",
+        "verificationQuestions": [
+            {
+                "question": "which font do you think looks like 'they made it in powerpoint' but I love",
+                "options": ["helvetica neue", "DIN condensed", "arial narrow", "new spirit italics"],
+                "correctAnswer": "arial narrow"
+            },
+            {
+                "question": "which genz slang are you most likely to use?",
+                "options": ["you're a queen", "you ate!", "skibiddi rizz", "you don't know any genz slang"],
+                "correctAnswer": "you ate!"
+            },
+            {
+                "question": "am I the best intern ever?",
+                "options": ["no.", "good...but not the best", "best international intern I guess","best intern now and forever!"],
+                "correctAnswer": "best intern now and forever!"
+            }
+        ],
+                "letters": [
+            {
+                "content": "Calvin,<br><br>Thank you so much for everything during my time here at NBC. I’m deeply grateful for the time, trust, and guidance you’ve given me throughout this internship. From the first time I walked into your office during my interview, you’ve created a space where I felt seen not just as a student, but as a creative with ideas worth exploring. Working with you has been one of the most formative experiences I’ve had— and something that will forever be foundational to my design career. Truly thankful for your generosity, kindness, and leadership— 深感敬佩，有幸同行，倍感珍惜 :)<br><br>yours in gratitude,<br>hyning"
+            }
+        ]
+    },
 };
 // Fetch the content from JSON (for this example, we directly use the object)
 const letterContent = lettersData.letters[0].content;
