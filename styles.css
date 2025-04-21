@@ -554,7 +554,7 @@ pre {
         justify-content: center;
         align-items: center;
         padding: 20px;
-        transition: background 0.3s ease;
+        transition:  0.3s ease;
         overflow: hidden;
     }
     
@@ -768,11 +768,58 @@ pre {
     .envelope-container {
         width: 100%;
         padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 70vh;
+        position: relative;
+        transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        animation: slideIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     }
     
     .initial-envelope {
         width: 90%;
         max-width: 500px;
+        height: 300px;
+        background: #fff6ea;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        margin: 0 auto;
+    }
+    
+    .envelope-flap {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #e0d3c1;
+        clip-path: polygon(0 0, 50% 50%, 100% 0);
+        z-index: 3;
+        transition: transform 0.8s ease;
+        transform-origin: top;
+    }
+    
+    .envelope-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        bottom: 5%;
+        transform: translateX(-50%);
+        color: #b00808;
+        font-family: "Instrument Serif", serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 2em;
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+        text-transform: lowercase;
+        z-index: 10;
+        width: 100%;
+        text-align: center;
     }
     
     .letter-content {
@@ -809,18 +856,17 @@ pre {
     }
     
     .envelope.opening .letter-content {
-        transform: translate(-50%, -50%) translateY(-15vh);
+        transform: translate(-50%, -50%) translateY(-5vh);
         opacity: 1;
     }
 
-    [data-name="letters"].envelope.opening .letter-content {
-        transform: translate(-50%, -50%) translateY(-15vh);
-        opacity: 1;
+    .envelope.opening .envelope-flap {
+        transform: rotateX(180deg);
     }
-    
-    .envelope-text {
-        font-size: 2em;
-        bottom: 5%;
+
+    [data-name="letters"].envelope.opening .letter-content {
+        transform: translate(-50%, -50%) translateY(-5vh);
+        opacity: 1;
     }
     
     pre {
