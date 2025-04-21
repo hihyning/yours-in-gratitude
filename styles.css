@@ -817,7 +817,7 @@ pre {
         opacity: 0.8;
         transition: opacity 0.3s ease;
         text-transform: lowercase;
-        z-index: 10;
+        z-index: 10;  /* Lower z-index than the letter content */
         width: 100%;
         text-align: center;
     }
@@ -836,7 +836,7 @@ pre {
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
         transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
         opacity: 0;
-        z-index: 5;
+        z-index: 15;  /* Increased z-index to ensure it's above the envelope text */
         border-radius: 10px;
         font-family: "Instrument Serif", serif;
     }
@@ -856,7 +856,7 @@ pre {
     }
     
     .envelope.opening .letter-content {
-        transform: translate(-50%, -50%) translateY(-5vh);
+        transform: translate(-50%, -50%) translateY(-4vh);
         opacity: 1;
     }
 
@@ -865,7 +865,7 @@ pre {
     }
 
     [data-name="letters"].envelope.opening .letter-content {
-        transform: translate(-50%, -50%) translateY(-5vh);
+        transform: translate(-50%, -50%) translateY(-4vh);
         opacity: 1;
     }
     
