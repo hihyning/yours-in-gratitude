@@ -362,7 +362,7 @@ h1 {
     align-items: center;
     position: absolute;
     left: 50%;
-    bottom: 4%;  /* Position from bottom of letter content */
+    bottom: -15%;  /* Position below the letter content */
     transform: translateX(-50%);
     color: #b00808;
     font-family: "Instrument Serif", serif;
@@ -405,7 +405,7 @@ h1 {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding: 10% 10% 10% 10%;  /* Increased bottom padding to make room for click text */
+    padding: 10% 10% 20% 10%;  /* Increased bottom padding to make room for click text */
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
@@ -807,7 +807,7 @@ pre {
         align-items: center;
         position: absolute;
         left: 50%;
-        bottom: 5%;
+        bottom: -20%;  /* Position below the letter content */
         transform: translateX(-50%);
         color: #b00808;
         font-family: "Instrument Serif", serif;
@@ -826,7 +826,7 @@ pre {
         width: 90%;
         max-width: 500px;
         font-size: 2em;
-        padding: 8% 8% 15% 8%;  /* Increased bottom padding for mobile */
+        padding: 8% 8% 25% 8%;  /* Increased bottom padding for mobile to make room for click text */
         position: absolute;
         left: 50%;
         top: 50%;
