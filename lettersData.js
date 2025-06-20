@@ -690,7 +690,7 @@ const lettersData = {
             {
                 "question": "who is the most goated smash character?",
                 "options": ["kirby duh", "whatever character you're playing", "king k","little mac"],
-                "correctAnswer": "what character you're playing"
+                "correctAnswer": "whatever character you're playing"
             }
         ],
                 "letters": [
