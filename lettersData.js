@@ -674,6 +674,31 @@ const lettersData = {
             }
         ]
     },
+    "Andrew Sturgeon": {
+        "name": "Andrew Sturgeon",
+        "verificationQuestions": [
+            {
+                "question": "where did we meet?",
+                "options": ["three jewels", "conwall coffee", "coney island", "the gym"],
+                "correctAnswer": "conwall coffee"
+            },
+            {
+                "question": "when should I leave?",
+                "options": ["you want me to stay 4ever", "never", "don't leave :(", "ASAP"],
+                "correctAnswer": "ASAP"
+            },
+            {
+                "question": "who is the most goated smash character?",
+                "options": ["kirby duh", "whatever character you're playing", "king k","little mac"],
+                "correctAnswer": "what character you're playing"
+            }
+        ],
+                "letters": [
+            {
+                "content": "Andrew,<br><br>Thank you so much for having me over last! It was very sponteanous and I did indeed feel very young, wild and free. I hope you're having a good wfh day right now and I'm definitely not writing this when I'm supposed to be doing work tool. just wanted to send you this cute note. technology is such a marvel isn't it?<br><br>yours in gratitude,<br>hyning"
+            }
+        ]
+    },
 };
 // Fetch the content from JSON (for this example, we directly use the object)
 const letterContent = lettersData.letters[0].content;
