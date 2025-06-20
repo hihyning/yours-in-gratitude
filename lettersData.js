@@ -695,7 +695,7 @@ const lettersData = {
         ],
                 "letters": [
             {
-                "content": "Andrew,<br><br>Thank you so much for having me over last! It was very sponteanous and I did indeed feel very young, wild and free. I hope you're having a good wfh day right now and I'm definitely not writing this when I'm supposed to be doing work lol... anyways,just wanted to send you this cute note. technology is such a marvel isn't it?<br><br>yours in gratitude,<br>hyning"
+                "content": "Andrew,<br><br>Thank you so much for having me over last! It was very sponteanous and I did indeed feel very young, wild and free. I hope you're having a good wfh day right now and I'm definitely not writing this when I'm supposed to be doing work lol... anyways, just wanted to send you this cute note. technology is such a marvel isn't it?<br><br>yours in gratitude,<br>hyning"
             }
         ]
     },
